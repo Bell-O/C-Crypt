@@ -38,7 +38,7 @@ Open a terminal in the project directory.
 
 Run the script:
 
-python c_crypt_tool.py
+python c_crypt.py
 
 Follow the prompts to encode or decode text:
 
