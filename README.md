@@ -1,85 +1,78 @@
-C-Crypt: A Simple Encryption/Decryption Tool
+**C-Crypt: A Simple Encryption/Decryption Tool**
 
-Overview
+## Overview
 
 C-Crypt is a Python-based command-line utility for securely encrypting and decrypting text using the AES encryption standard. It utilizes the PBKDF2 key derivation function for strong password-based key generation, ensuring your sensitive data remains safe.
 
-Features
+## Features
 
-Secure Encryption: AES encryption in CBC mode with a randomly generated initialization vector (IV) and salt.
+- **Secure Encryption:** AES encryption in CBC mode with a randomly generated initialization vector (IV) and salt.
+- **Strong Key Derivation:** Uses PBKDF2 with SHA256 to derive keys from passwords, with 1,000,000 iterations.
+- **Cross-Platform Compatibility:** Works seamlessly on Windows, Linux, and macOS.
+- **User-Friendly Interface:** Simple command-line interface to encode and decode text.
 
-Strong Key Derivation: Uses PBKDF2 with SHA256 to derive keys from passwords, with 1,000,000 iterations.
+## Requirements
 
-Cross-Platform Compatibility: Works seamlessly on Windows, Linux, and macOS.
-
-User-Friendly Interface: Simple command-line interface to encode and decode text.
-
-Requirements
-
-Python 3.6 or higher
-
-Required Python modules:
-
-cryptography
-
-colorama
-
-pyfiglet
+- Python 3.6 or higher
+- Required Python modules:
+  - `cryptography`
+  - `colorama`
+  - `pyfiglet`
 
 Install dependencies using pip:
 
+```sh
 pip install cryptography colorama pyfiglet
+```
 
-How to Use
+## How to Use
 
-Clone or download this repository.
+1. Clone or download this repository.
+2. Open a terminal in the project directory.
+3. Run the script:
 
-Open a terminal in the project directory.
+   ```sh
+   python c_crypt.py
+   ```
 
-Run the script:
+4. Follow the prompts to encode or decode text:
+   - Enter your text to encode or decode.
+   - Provide a secure password.
 
-python c_crypt.py
+### Example
 
-Follow the prompts to encode or decode text:
+**Encoding Text:**
 
-Enter your text to encode or decode.
-
-Provide a secure password.
-
-Example
-
-Encoding Text:
-
+```
 Select an option (1: Encode, 2: Decode): 1
 Enter the text to encode: Hello, World!
 Enter the password: securepassword123
 
 Encoded text: BASE64_ENCODED_STRING
+```
 
-Decoding Text:
+**Decoding Text:**
 
+```
 Select an option (1: Encode, 2: Decode): 2
 Enter the text to decode: BASE64_ENCODED_STRING
 Enter the password: securepassword123
 
 Decoded text: Hello, World!
+```
 
-Security Considerations
+## Security Considerations
 
-Always use a strong and unique password for encryption.
+- Always use a strong and unique password for encryption.
+- Keep the encrypted output and password in safe storage to prevent unauthorized access.
+- The author is not responsible for any misuse of this software, including illegal or unethical activities.
 
-Keep the encrypted output and password in safe storage to prevent unauthorized access.
+## License
 
-This tool is designed strictly for educational purposes; the author does not condone or support its use for any illegal activities.
+This project is licensed under the Bell Software License (BSL). See the LICENSE file for details.
 
-License
+## Acknowledgments
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgments
-
-Author: Bell (GitHub: Bell-O)
-
-Inspired by the need for simple and secure text encryption tools.
-
+- **Author:** Bell ([GitHub: Bell-O](https://github.com/Bell-O))
+- Inspired by the need for simple and secure text encryption tools.
 
